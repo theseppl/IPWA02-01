@@ -2,7 +2,7 @@
 public class TestClass {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World, GIT es gut?");
+		System.out.println("Hello World, GIT es gut heute?");
 
 	}
 
