@@ -11,11 +11,11 @@ import jakarta.inject.Named;
 @ApplicationScoped
 public class Aufgabenliste implements Serializable {
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 	private static Aufgabenliste instance = new Aufgabenliste();
-	private List<Aufgabe> liste = new ArrayList<Aufgabe>();
+	private List<Aufgabe> liste = new ArrayList<>();
 
 	public Aufgabenliste() {
 		liste.add(new Aufgabe("tue dies", "Jakob"));
