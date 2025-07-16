@@ -9,7 +9,12 @@ import jakarta.inject.Named;
 public class AufgabenListeController
              implements Serializable
 {
-    public String startEdit() {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public String startEdit() {
         return "editierbar";
     }
     
