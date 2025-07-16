@@ -10,6 +10,10 @@ import jakarta.inject.Named;
 @Named("aufgabenListe")
 @ApplicationScoped
 public class Aufgabenliste implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static Aufgabenliste instance = new Aufgabenliste();
 	private List<Aufgabe> liste = new ArrayList<Aufgabe>();
 
