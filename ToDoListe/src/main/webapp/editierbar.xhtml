@@ -12,7 +12,7 @@
 	<h:form>
 		<p:dataTable var="aufgabe" value="#{aufgabenListe.liste}">
 			<p:column headerText="Text">
-				<p:inputText value="#{aufgabe.text}" />
+				<p:inputText value="#{aufgabe.text}" required="true"/>
 			</p:column>
 			<p:column headerText="Person">
 				<p:inputText value="#{aufgabe.person}" />
@@ -29,7 +29,10 @@
 				<p:slider for="aufwand" display="output" minValue="1" maxValue="40" />
 			</p:column>
 		</p:dataTable>
-			<p:commandButton value="Speichern" icon="pi pi-check" action="#{controller.stopEdit()}" />
+		<p:messages id="messages">
+		 	<p:autoUpdate/>
+		</p:messages>	
+		<p:commandButton value="Speichern" icon="pi pi-check" action="#{controller.stopEdit()}" />
 	</h:form>
 </h:body>
 </html>
