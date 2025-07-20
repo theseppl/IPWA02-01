@@ -1,4 +1,4 @@
-package lektion2;
+package toDoListPack;
 
 public class Benutzer {
 	String name;
