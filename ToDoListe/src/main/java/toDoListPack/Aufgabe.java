@@ -1,13 +1,21 @@
 package toDoListPack;
 
 import java.util.Date;
+import jakarta.persistence.*;
 
+@Entity
 public class Aufgabe {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int ID;
+
 	private String text;
 	private String person;
 	Date faelligAm;
 	Boolean erledigt;
 	float aufwand;
+	
+	public Aufgabe() {}
 
 	public Aufgabe(String text, String person) {
 		this.text = text;
@@ -63,5 +71,13 @@ public class Aufgabe {
 		this.aufwand = aufwand;
 	}
 	
+	public int getID() {
+		return ID;
+	}
+
+	public void setID(int iD) {
+		ID = iD;
+	}
+
 	
 }
